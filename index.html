@@ -8,17 +8,15 @@ var currentSong = "rickroll.mp3";
 
 
 
-function stopMusic() {
-    window.location.reload();
-}
-
 function musicPlay(){
-	console.log("play button was pressed");
+	
 	var audio = new Audio( currentSong );
 	audio.play();
 }
 
-
+function stopMusic(){
+	audio.pause()
+}
 
 
 </script>
@@ -31,23 +29,27 @@ function musicPlay(){
 <div id="musicplay">
 
 	<button class="button" onclick="musicPlay()">
-		Play Music
+		Play
 	</button>
 
+	<input type="button" class="button" value="Stop" onclick="window.location.reload()" width="60px">
 
+	<button class="button" onclick="pauseMusic()">
+		Pause
+	</button>
+
+	
+		
 </div>
 
 <p></p>
 
 <div id="container">
 
-	
-
-
-
-
-
-
+<div id="header">
+	<img src="upbutton.png" height="50px" width="50px">
+	<img src= "downbutton.png" height="50px" width="50px">
+</div>
 
 
 

@@ -9,7 +9,8 @@ height: 1000px;
 
 
 #header {
-
+background-color: #4c994c;
+height: 50px;
 }
 
 
@@ -51,46 +52,31 @@ height: 1000px;
   cursor: pointer;
   outline: none;
   color: #fff;
-  background-color: #00FFFF;
+  background-color: #80ff80;
   border: none;
   border-radius: 20px;
   box-shadow: 0 9px #999;
 }
 
-.button:hover {background-color: #00e6e6}
+.button:hover {background-color: #59b259}
 
 .button:active {
-  background-color: #00cccc;
+  background-color: #59b259;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
-/*put in the URL where you copy and paste code. avoid plagiarism  */
+/*https://www.w3schools.com/howto/howto_css_animate_buttons.asp*/
 
 #musicplay{
-  margin-left: 42.5%;
-  margin-top: 40px;
-}
-
-
-
-h2{
-	text-align: center;
-	font-family: arial;
-  font-size: 50px;
+  padding-top: 10px;
+  margin-left: 40%;
 }
 
 .center{
 text-align: justify;
 
 }
-
-input{
-	 width:100px;
-    margin-left:auto;
-    margin-right:auto;
-}
-
 
 .rainbowhead{
 
@@ -162,6 +148,24 @@ margin: 0 auto;
       }
     }
 /*code credited to https://codepen.io/raaasin/pen/quvHr*/
+
+
+
+h2{
+	text-align: center;
+	font-family: arial;
+  font-size: 50px;
+}
+
+
+
+input{
+	 width:100px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
 
 p{
 font-size: 25px;
