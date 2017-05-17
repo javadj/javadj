@@ -14,15 +14,19 @@ height: 50px;
 }
 
 
-#mediaarea {
+.mediaarea {
 
 
 }
 
 
-.songbox {
-padding-top: 10px;
 
+
+.songbox {
+
+height: 30px;
+font-size: 20px;
+font-family: italic;
 }
 
 .mediapause{
@@ -67,10 +71,14 @@ padding-top: 10px;
   margin-left: 40%;
 }
 
-.center{
-text-align: justify;
-
+.songnum{
+font-size: 20px;
+font-family: arial;
+font-weight: bold;
+padding-top: 30px;
 }
+
+
 
 .rainbowhead{
 
