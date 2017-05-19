@@ -3,10 +3,18 @@
 <title>JavaScript DJ by JJZ... </title>
 <link rel = "stylesheet" type = "text/css" href = "index.css"/>
 <script>
-var currentSong = ["takeonme.mp3", "rickroll.mp3", "earthwindandfire.mp3", "carelesswhisper.mp3", "shootingstars.mp3", "ymca.mp3", "stayinalive.mp3", "finalcountdown.mp3"];
 
-var songList = ["song1.mp3" , "song2.mp3" ] ;
 
+
+var songFiles = ["takeonme.mp3", "rickroll.mp3", "earthwindandfire.mp3", "carelesswhisper.mp3", "shootingstars.mp3", "ymca.mp3", "stayinalive.mp3", "finalcountdown.mp3"];
+
+var songTitles = ["Take On Me" , "Never Going to give you up" , "song blah", "Careless Wispers..."  ] ;
+
+var artistNames = [ "x"];
+
+
+
+console.log( "testing arrary.. "  + songTitles[0]);
 
 
 //how to send out message when clicked on songnum and add to current song and play??
@@ -14,6 +22,35 @@ var songList = ["song1.mp3" , "song2.mp3" ] ;
 
 
 // build an array of songs... Go back to codeCademy array lessons, or look at the book.
+
+
+
+function buildSongList(  ){
+
+var myObjectId = document.getElementById("tempSongList")
+
+myObjectId.innerHTML = "";
+// reset object 
+
+// the number                                is temporary 
+for ( var i= 0  ;    i <= ( songTitles.length - 1)  ;  i++ ) {
+
+var myNewE = document.createElement("p");
+var myNewT = document.createTextNode( songTitles[i]   );	
+myNewE.appendChild(myNewT);
+myObjectId.appendChild(myNewE);
+// spit out a new paragraph...
+
+}
+// end of for loop
+
+
+}
+// end of function...
+
+
+
+
 
 
 function musicPlay(){
@@ -51,29 +88,27 @@ function pauseMusic(){
 		
 </div>
 
-<p></p>
+
 
 <div id="container">
 
-<div id="header">
-	<img src="upbutton.png" onclick="" height="50px" width="50px">
-	<img src= "downbutton.png" onclick="" height="50px" width="50px">
-</div> 
+	<div id="header">
+		<img src="upbutton.png" onclick="" height="50px" width="50px">
+		<img src= "downbutton.png" onclick="" height="50px" width="50px">
+	</div> 
 
 
-<div>
-	<ol>
-		<li>Never gonna give you up</li>
-		<li>Shooting Stars</li>
-		<li>YMCA</li>
-		<li>Take on Me</li>
-		<li>Eye of the Tiger</li>
-		<li>Final Countdown</li>
-        <li>Stay'in Alive</li>
-        <li>Earth Wind and Fire</li>
-        <li>Careless Whisper</li>
-	</ol>
+<div id="tempSongList">
+	blank div
 </div>
+
+<button onclick=buildSongList("songNames") >
+	temp click me
+</button>
+
+
+</div>
+<!-- close of container  -->
 
 </body>
 </html>
