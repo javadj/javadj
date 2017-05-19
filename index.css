@@ -173,3 +173,10 @@ p{
 font-size: 25px;
 font-family: verdana;
 }
+
+li{
+padding-top: 20px;
+margin-left: 30%;
+font-size: 20px;
+font-weight: bold;
+}
