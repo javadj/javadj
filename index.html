@@ -8,7 +8,7 @@
 
 var songFiles = ["takeonme.mp3", "rickroll.mp3", "earthwindandfire.mp3", "carelesswhisper.mp3", "shootingstars.mp3", "ymca.mp3", "stayinalive.mp3", "finalcountdown.mp3"];
 
-var songTitles = ["Take On Me" , "Never Going to give you up" , "song blah", "Careless Wispers..."  ] ;
+var songTitles = ["Take On Me" , "Never gonna give you up" , "Earth Wind and Fire", "Careless Whisper", "Shooting Stars", "Stay'in Alive", "YMCA", "The Final Countdown"  ] ;
 
 var artistNames = [ "x"];
 
@@ -35,7 +35,7 @@ myObjectId.innerHTML = "";
 // the number                                is temporary 
 for ( var i= 0  ;    i <= ( songTitles.length - 1)  ;  i++ ) {
 
-var myNewE = document.createElement("p");
+var myNewE = document.createElement("div");
 var myNewT = document.createTextNode( songTitles[i]   );	
 myNewE.appendChild(myNewT);
 myObjectId.appendChild(myNewE);
@@ -99,7 +99,7 @@ function pauseMusic(){
 
 
 <div id="tempSongList">
-	blank div
+	
 </div>
 
 <button onclick=buildSongList("songNames") >
