@@ -1,0 +1,46 @@
+<html>
+<script type="text/javascript">
+
+
+
+
+
+// we are taking something from code and then builind a web page from JavaScript Building a page with the dom...
+
+//  not builing a page with static HTML
+
+// we are building dynamic... 
+
+
+function outputFunction( howManyParagraphs ){
+
+
+
+
+var myBodyId = document.getElementById("myBody")
+// myBodyId.innerHTML = "";
+// reset body 
+ 
+
+
+for ( var i= 1  ;    i <= howManyParagraphs  ;  i++ ) {
+
+var myNewE = document.createElement("p");
+var myNewT = document.createTextNode("Literally new paragraph");	
+myNewE.appendChild(myNewT);
+myBodyId.appendChild(myNewE);
+// spit out a new paragraph...
+
+}
+// end of for loop
+
+
+}
+// end of function...
+
+
+
+</script>
+<body id="myBody" onclick="outputFunction(4)"> CLick me to add some paragraphs
+</body>
+</html>

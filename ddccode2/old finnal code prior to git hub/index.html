@@ -1,0 +1,69 @@
+<html>
+<head>
+
+<link rel = "stylesheet" type = "text/css" href = "index.css"/>
+<script>
+var currentSong = "rickroll.mp3";
+
+
+
+
+function stopMusic() {
+    window.location.reload();
+}
+
+function musicPlay(){
+	console.log("play button was pressed");
+	var audio = new Audio( currentSong );
+	audio.play();
+}
+
+
+
+
+</script>
+
+
+<body>
+
+<div class="rainbowhead"><span>Music DJ</span></div>
+
+<div id="musicplay">
+
+	<button class="button" onclick="musicPlay()">
+		Play Music
+	</button>
+
+
+</div>
+
+<p></p>
+
+<div id="container">
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

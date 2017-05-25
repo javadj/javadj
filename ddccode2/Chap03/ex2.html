@@ -1,0 +1,48 @@
+<html>
+<script>
+
+var guess = "";
+
+var op1 = 0;
+var op2 = 0;
+
+op1 = (   Math.random() * 10          );
+console.log(op1);
+op1 = Math.round(   (op1 + 0.00001) * 10) / 10;
+console.log(op1);
+
+
+op2 = (   Math.random() * 10          );
+op2 = Math.round(   (op2 + 0.00001) * 10) / 10;
+
+
+
+
+var correct = op1 + op2;
+
+while(guess != correct){
+
+	guess = prompt("add these numbers "  + op1 +  " "  + op2      ) ;
+	// accept human answer as text then conver to number...
+	guess = guess * 1;
+
+	if(guess == correct)
+		{
+		alert("correct!");
+		}
+		else
+			{
+			alert("wrong, keep trying");
+			}
+
+
+
+}
+// end of while loop
+
+console.log( "end of loop");
+
+
+
+</script>
+</html>

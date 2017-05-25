@@ -1,0 +1,169 @@
+#container {
+margin-left: 20%;
+margin-right: 20%;
+background-color: #80ff80;
+height: 1000px;
+}
+/*background-image: url("testpicture.jpg");*/
+
+
+
+#header {
+
+}
+
+
+#mediaarea {
+
+
+}
+
+
+.songbox {
+
+}
+
+.mediapause{
+ background-image: url("play.png");
+    background-repeat: no-repeat;
+	text-align: center;
+  height: 80px;
+  width: 80px;
+  background-color: yellow;
+/* no backgournd color on final draft*/
+	}
+
+.mediaplay{
+   background-image: url("play.png");
+      background-repeat: no-repeat;
+  text-align: center;
+  height: 80px;
+  width: 80px;
+  background-color: yellow;
+/* no backgournd color on final draft*/
+  }
+
+
+.button {
+  padding: 10px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #00FFFF;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #00e6e6}
+
+.button:active {
+  background-color: #00cccc;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/*put in the URL where you copy and paste code. avoid plagiarism  */
+
+#musicplay{
+  margin-left: 42.5%;
+  margin-top: 40px;
+}
+
+
+
+h2{
+	text-align: center;
+	font-family: arial;
+  font-size: 50px;
+}
+
+.center{
+text-align: justify;
+
+}
+
+input{
+	 width:100px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+.rainbowhead{
+
+text-align: center;
+font-size: 150px;
+font-family: futura;
+font-style: italic;
+font-weight: bold;
+
+background-color: #80ff80;
+color:#313131;
+/* expxlain colors above */
+
+width:100%;
+margin: 0 auto;
+
+      
+-webkit-animation:colorchange 8s infinite alternate;
+    }
+    @-webkit-keyframes colorchange {
+      0% {
+        
+        color: blue;
+      }
+      
+      10% {
+        color: #8e44ad;
+      }
+      
+      20% {
+        color: #1abc9c;
+      }
+      
+      30% {
+        color: #d35400;
+      }
+      
+      40% {
+        color: blue;
+      }
+      
+      50% {
+        
+        color: #34495e;
+      }
+      
+      60% {
+        
+        color: blue;
+      }
+      
+      70% {
+        
+        color: #2980b9;
+      }
+      80% {
+     
+        color: #f1c40f;
+      }
+      
+      90% {
+     
+        color: #2980b9;
+      }
+      
+      100% {
+        
+        color: pink;
+      }
+    }
+/*code credited to https://codepen.io/raaasin/pen/quvHr*/
+
+p{
+font-size: 25px;
+font-family: verdana;
+}

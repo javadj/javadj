@@ -1,0 +1,32 @@
+.smallbox{
+height: 400px;
+width: 400px;
+background: red;
+float: left;
+clear: left;
+}
+
+.mediumbox{
+height: 400px;
+width: 400px;
+background: yellow;
+float: left;
+clear: left;
+}
+
+.largebox{
+height: 400px;
+width: 400px;
+background: green;
+float: left;
+clear: left;
+}
+
+.purplebox{
+height: 100px;
+width: 100px;
+background: purple;
+float: left;
+clear: left;
+}
+

@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>JZ and JR</title>
+<link rel="stylesheet" type="text/css" href="ex5.css">
+</head>
+
+
+<script>
+
+function myGame()
+{
+
+var HumanNum = 0;
+var computerGuess = Math.floor(Math.random() * 10);
+var computerGuess2 = Math.floor(Math.random() * computerGuess)
+var computerGUess3 = computerGuess2 - 1
+var highLimit = 1;
+var LowLimit = 10;
+var i = 10;
+var a = 0;
+
+
+var humanHint = "x" 
+var myId = 0;
+
+
+while ( humanHint != "c")
+{
+
+
+humanHint = prompt("Dear human...Please give me feedback...my guess is = "  + computerGuess);
+
+
+if (humanHint == "c")
+    {
+    newFeedback = "game over, correct!";
+    }
+
+    
+    else if( humanHint == "h")
+        {
+        //  this is where the computer picks a new lower number
+        for (i = computerGuess; i > 0; i--){
+        prompt(i);
+} 
+
+
+        newFeedback = "ooh thanks, too high eh.. let me run more code.. and try again";
+ 
+
+        }
+        else if ( humanHint == "l")
+	        {
+	        // we pick a new higher number  
+	        newFeedback = "rats.. too low eh.. let me run more code.. and try again";
+
+            for (i = computerGuess; i > 0; i++){
+            prompt(i);
+}           
+
+
+
+	        }
+	        else
+		        {
+		        // pick the same number
+	  	        newFeedback = "hey human.. bad try, type in just letter c,h,l    ok??   ";
+		        }
+
+alert(newFeedback);
+
+
+
+}
+// close of while loop
+
+
+
+}
+// close of function
+
+
+
+
+
+
+</script>
+
+<body>
+
+<p>Think of a number between 1 & 10... type in c : correct, h : too high, and l : too low. type it in the text box and then press the orange box</p>
+
+
+<button onclick=myGame()>
+    Click me
+</button>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>

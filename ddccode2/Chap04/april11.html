@@ -1,0 +1,37 @@
+<html>
+<script>
+
+function myFunction(){
+	
+	var myId = document.getElementById("outputDIV");
+	myId.innerHTML = myForm.myText.value;
+	var audio = new Audio('rick.mp3');
+    audio.play()
+
+}
+
+function stopMusic(){
+    audio.stop()
+}
+
+
+
+</script>
+<body>
+
+	<form name="myForm">
+		<input name="myText" type="text">
+	</form>
+	<div id="outputDIV" onclick=myFunction()>	
+		NO Warnings yet
+	</div>
+
+<p>empty p</p>
+
+	<div id="stopDIV" onclick=stopMusic()>	
+		Click me to stop...
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<html>
+
+<link rel="stylesheet" type="text/css" href="ex1.css">
+
+<head>
+	<title>Helllo! </title>
+</head>
+
+<body>
+<div id="container">
+
+<h3>Nice To Meet You!  <span id="outputspot" >  </span>   </h3>
+<p>Javasciprt Lesson 1</p>
+</div>	
+
+
+
+
+<script type="text/javascript">
+
+ 
+
+var customerFirstName = 0;
+// declare variables with good names and some starting value 
+
+//This variable i neamed Greeting asks for the viewer's first name
+customerFirstName = prompt("What is your first name?");
+//the prompt command asks for input 
+
+
+var MiddleInital;
+
+MiddleInitial = prompt("What is your middle initial?");
+
+ 
+
+var LastName;
+
+LastName = prompt("What is your last name?");
+
+
+// above is the input
+
+
+// below we do some string manipulation
+var myGreeting1 = customerFirstName + " " + MiddleInitial + " " + LastName  ;
+var myGreeting2 =  LastName + ", " + customerFirstName + " " + MiddleInitial + ".";
+
+
+// output with alert and with innerHTML  property
+alert(  myGreeting1 + " is your whole name");
+alert("you could also be called " + myGreeting2);
+
+
+
+// it can only push out if the DIV was built before the javascript
+var tempTargetID = 0;
+tempTargetID = document.getElementById("outputspot");
+// get the id then push the text into that id
+tempTargetID.innerHTML = myGreeting2;
+
+
+
+</script>
+
+
+</body>
+
+</html>

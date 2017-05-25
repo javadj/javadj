@@ -1,0 +1,98 @@
+
+
+#headcontainer{
+
+clear: both;
+background-color: pink;
+/* the code above makes the background color pink*/
+height:50px;
+/* the code above makes the box 20 pixels high*/
+width:88%;
+/* the code above makes the box float to the left instead of being in the middle*/
+margin:0px auto;
+/* the line above centers the text and the box*/
+}
+
+a:hover{
+background: #FFFFFF;
+/* the line above makes the link boxes interactive by turning white when hovering over the link box*/
+}
+
+.menu{
+border: solid 1px; 
+/* borders give the thing a border, duh*/
+color: white;
+width: 120;
+height: 300;
+padding: 15px;
+float:left;
+border: solid 1px;
+
+
+}
+
+nav{
+border: solid 1px; 
+color: white;
+font-family: Arial;
+font-size: 15px;
+text-align: center;
+}
+
+
+#container{
+margin-top: 20px;
+height: 1800px;
+width: 88%;
+background-color: #87CEFA;
+margin:0px auto;
+clear: both;
+
+}
+
+#imgbox{
+font-size: 50px;
+margin: 7px;
+text-align: center;
+float: left;
+}
+
+#textarea{
+margin: 0px auto;
+clear: both;
+height: 400px;
+width: 90%;
+background-color: pink;
+padding: 10px;
+font-size: 20px;
+}
+
+body{
+background-color: rgb(69,69,69);
+}
+
+#header{
+font-size: 50px;
+background-color: pink;
+font-family: Arial;
+text-align: center;
+height: 75px;
+width: 88%;
+margin: 0px auto;
+border: solid 1px;
+color: white;
+}
+
+.blacktext{
+color: black;
+}
+
+.dankmemes{
+background-color: white;
+font-size: 40px;
+height: 400px;
+width: 88%;
+margin: 0px auto;
+padding: 20px;
+margin-top: 20px;
+}

@@ -1,0 +1,18 @@
+<html>
+<script>
+
+function addPara(){
+	b = document.getElementById("bodyId");
+	p = document.createElement("p");
+	t = document.createTextNode("word")
+
+p.appendChild(t);
+b.appendChild(p);
+}
+
+
+</script>
+<body id="bodyId" onclick="addPara()">
+this is text 
+</body>
+</html>
