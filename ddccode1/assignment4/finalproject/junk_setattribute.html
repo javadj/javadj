@@ -1,0 +1,60 @@
+<head>
+<style type="text/css">
+.redbox{background-color: red; height: 30px;}
+</style>
+
+
+
+<script type="text/javascript">
+var myCounter = 0;
+
+
+function myFunction()
+{
+// get ID of the body
+var myBodyId = document.getElementById("myBody")	
+
+// Create an element node
+var myElement = document.createElement("div");             
+
+
+myBodyId.appendChild(myElement);                     
+// Append element to body
+
+myCounter++;
+
+myElement.setAttribute("id", myCounter);
+
+myElement.setAttribute("class", "redbox");
+
+myElement.innerHTML = "user slected song";
+
+
+}
+
+</script>
+
+
+</head>
+
+
+<body id="myBody"  >
+
+<button onclick=myFunction()>
+click me
+</button>
+
+
+<div id="p1" class="redbox"> 
+	Premade song red box
+</div>
+
+
+<!-- goal is to get a new image tag here, set attribute  src="URL" -->
+
+
+
+</body>
+
+
+<!-- element.setAttribute("style", "background-color: red;"); -->

@@ -1,3 +1,6 @@
+<!--  next goal is to use the style changing of color flasher... ch4  add that to earth wind fire song, make it red or something different.  -->
+
+
 <html>
 <head>
 <title>JavaScript DJ by JJZ... </title>
@@ -6,7 +9,9 @@
 
 
 
-var songFiles = ["takeonme.mp3", "rickroll.mp3", "earthwindandfire.mp3", "carelesswhisper.mp3", "shootingstars.mp3", "ymca.mp3", "stayinalive.mp3", "finalcountdown.mp3"];
+var songFiles = ["earthwindandfire.mp3"];
+
+//takeonme.mp3", "rickroll.mp3", "earthwindandfire.mp3", "carelesswhisper.mp3", "shootingstars.mp3", "ymca.mp3", "stayinalive.mp3", "finalcountdown.mp3
 
 var songTitles = ["Take On Me" , "Never gonna give you up" , "Earth Wind and Fire", "Careless Whisper", "Shooting Stars", "Stay'in Alive", "YMCA", "The Final Countdown"  ] ;
 
@@ -55,7 +60,7 @@ myObjectId.appendChild(myNewE);
 
 function musicPlay(){
 	
-	var audio = new Audio( currentSong );
+	var audio = new Audio( songFiles );
 	audio.play();
 }
 
@@ -103,7 +108,7 @@ function pauseMusic(){
 </div>
 
 <button onclick=buildSongList("songNames") >
-	temp click me
+	Click for Song list
 </button>
 
 <button>
