@@ -54,7 +54,6 @@ myObjectId.appendChild(myNewE);
 myCounter++;
 myNewE.setAttribute("id", myCounter);
 myNewE.setAttribute("class", "songbox");
-myNewE.setAttribute("onclick", "musicPlay")
 }
 // end of for loop
 
@@ -70,29 +69,7 @@ myNewE.setAttribute("onclick", "musicPlay")
 
 
 
-function musicPlay(){
-	
-	//var audio = new Audio( songFiles ); audio.play();
 
-	var audio1 = new Audio( takeonme.mp3 );
-	var audio2 = new Audio( rickroll.mp3 ); 
-	var audio3 = new Audio( earthwindandfire.mp3 ); 
-	var audio4 = new Audio( carelesswhisper.mp3 ); 
-	var audio5 = new Audio( shootingstars.mp3 ); 
-	var audio6 = new Audio( ymca.mp3 ); 
-	var audio7 = new Audio( stayinalive.mp3 ); 
-	var audio8 = new Audio( finalcountdown.mp3 ); 
-
-
-	document.getElementById("1").innerHTML = audio1.play;
-	document.getElementById("2").innerHTML = audio2.play;
-	document.getElementById("3").innerHTML = audio3.play;
-	document.getElementById("4").innerHTML = audio4.play;
-	document.getElementById("5").innerHTML = audio5.play;
-	document.getElementById("6").innerHTML = audio6.play;
-	document.getElementById("7").innerHTML = audio7.play;
-	document.getElementById("8").innerHTML = audio8.play
-}
 
 function pauseMusic(){
 	var audio = new Audio(currentSong)
