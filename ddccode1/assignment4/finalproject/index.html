@@ -1,6 +1,3 @@
-<!--  next goal is to use the style changing of color flasher... ch4  add that to earth wind fire song, make it red or something different.  -->
-
-
 <html>
 <head>
 <title>JavaScript DJ by JJZ... v1.1104 </title>
@@ -62,46 +59,87 @@ myNewE.setAttribute("class", "songbox");
 
 
 var aux = 1;
+var track1 = new Audio('takeonme.mp3');
+var track2 = new Audio('rickroll.mp3');
+var track3 = new Audio("earthwindandfire.mp3");
+var track4 = new Audio("carelesswhisper.mp3")
+var track5 = new Audio("shootingstars.mp3")
+var track6 = new Audio("ymca.mp3")
+var track7 = new Audio("stayinalive.mp3")
+var track8 = new Audio("finalcountdown.mp3")
 
 function playAudiox() {
   if (aux == 1) {
     console.log("Playing takeonme.");
-    var track1 = new Audio('takeonme.mp3');
     track1.play();
     aux++;
   } else if (aux == 2) {
     console.log("Playing nevergonnagiveyouup.");
-    var track2 = new Audio('rickroll.mp3');
     track2.play();
     aux++;
   } else if (aux == 3) {
     console.log("Playing earthwindandfire.");
-    var track3 = new Audio("earthwindandfire.mp3");
     track3.play();
+    aux++
   } else if (aux == 4){
-  	console.log("carelesswhisper")
-  	var track4 = new Audio("carelesswhisper.mp3")
+  	console.log(" Playing carelesswhisper")
+  	track4.play();
   	aux++
   } else if (aux == 5){
-  	console.log("shootingstars")
-  	var track5 = new Audio("shootingstars.mp3")
+  	console.log("Playing shootingstars")
+  	track5.play();
   	aux++
   } else if (aux == 6){
-  	console.log("ymca")
-  	var track6 = new Audio("ymca.mp3")
+  	console.log("Playing ymca")
+  	track6.play();
   	aux++
   } else if (aux == 7){
-  	console.log("stayinalive")
-  	var track7 = new Audio("stayinalive.mp3")
+  	console.log("Playing stayinalive")
+  	track7.play();
   	aux++
   } else if (aux == 8){
-  	console.log("finalcountdown")
-  	var track8 = new Audio("finalcountdown.mp3")
+  	console.log("Playing finalcountdown")
+  	track8.play();
   	aux = 0
   }
 } // end of playlist function
 
-
+var i = 1
+function pauseAudiox() {
+  if (i == 1) {
+    console.log("pausing takeonme.");
+    track1.pause();
+    i++;
+  } else if (i == 2) {
+    console.log("pausing nevergonnagiveyouup.");
+    track2.pause();
+    i++;
+  } else if (i == 3) {
+    console.log("pausing earthwindandfire.");
+    track3.pause();
+    i++;
+  } else if (i == 4){
+  	console.log("pausing carelesswhisper")
+  	track4.pause();
+  	i++
+  } else if (i == 5){
+  	console.log("pausing shootingstars")
+  	track5.pause();
+  	i++
+  } else if (i == 6){
+  	console.log("pausing ymca")
+  	track6.pause();
+  	i++
+  } else if (i == 7){
+  	console.log("pausing stayinalive")
+  	track7.pause();
+  	i++
+  } else if (i == 8){
+  	console.log("pausing finalcountdown")
+  	track8.pause();
+  	i = 0
+  }
+} // end of playlist function
 
 
 
@@ -129,7 +167,7 @@ function pauseMusic(){
 
 	<input type="button" class="button" value="Stop" onclick="window.location.reload()" width="60px">
 
-	<button class="button" onclick="pauseMusic()">
+	<button class="button" onclick="pauseAudiox()">
 		Pause
 	</button>
 

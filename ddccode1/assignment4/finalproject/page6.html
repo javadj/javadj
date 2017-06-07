@@ -1,0 +1,202 @@
+<html>
+<head>
+<title>JavaScript DJ by JJZ... v1.1104 </title>
+<link rel = "stylesheet" type = "text/css" href = "index.css"/>
+<script>
+
+
+
+var songFiles = ["earthwindandfire.mp3"];
+
+//takeonme.mp3", "rickroll.mp3", "earthwindandfire.mp3", "carelesswhisper.mp3", "shootingstars.mp3", "ymca.mp3", "stayinalive.mp3", "finalcountdown.mp3
+
+var songTitles = ["Take On Me" , "Never gonna give you up" , "Earth Wind and Fire", "Careless Whisper", "Shooting Stars", "Stay'in Alive", "YMCA", "The Final Countdown"  ] ;
+
+var artistNames = [ "x"];
+
+
+
+console.log( "testing arrary.. "  + songTitles[0]);
+
+
+//how can i make my songfiles play and correspond to the list??
+
+
+
+// build an array of songs... Go back to codeCademy array lessons, or look at the book.
+
+
+
+function buildSongList(  ){
+
+var myCounter = 0;
+var myObjectId = document.getElementById("tempSongList")
+
+myObjectId.innerHTML = "";
+// reset object 
+
+// the number                                is temporary 
+for ( var i= 0  ;    i <= ( songTitles.length - 1)  ;  i++ ) {
+
+
+
+
+
+var myNewE = document.createElement("div");
+var myNewT = document.createTextNode( songTitles[i]   );	
+myNewE.appendChild(myNewT);
+myObjectId.appendChild(myNewE);
+// spit out a new paragraph...
+
+myCounter++;
+myNewE.setAttribute("id", myCounter);
+myNewE.setAttribute("class", "songbox");
+}
+// end of for loop
+
+}
+// end of function...
+
+
+var aux = 1;
+var track1 = new Audio('takeonme.mp3');
+var track2 = new Audio('rickroll.mp3');
+var track3 = new Audio("earthwindandfire.mp3");
+var track4 = new Audio("carelesswhisper.mp3")
+var track5 = new Audio("shootingstars.mp3")
+var track6 = new Audio("ymca.mp3")
+var track7 = new Audio("stayinalive.mp3")
+var track8 = new Audio("finalcountdown.mp3")
+
+function playAudiox() {
+  if (aux == 1) {
+    console.log("Playing takeonme.");
+    track1.play();
+    aux++;
+  } else if (aux == 2) {
+    console.log("Playing nevergonnagiveyouup.");
+    track2.play();
+    aux++;
+  } else if (aux == 3) {
+    console.log("Playing earthwindandfire.");
+    track3.play();
+    aux++
+  } else if (aux == 4){
+  	console.log(" Playing carelesswhisper")
+  	track4.play();
+  	aux++
+  } else if (aux == 5){
+  	console.log("Playing shootingstars")
+  	track5.play();
+  	aux++
+  } else if (aux == 6){
+  	console.log("Playing ymca")
+  	track6.play();
+  	aux++
+  } else if (aux == 7){
+  	console.log("Playing stayinalive")
+  	track7.play();
+  	aux++
+  } else if (aux == 8){
+  	console.log("Playing finalcountdown")
+  	track8.play();
+  	aux = 0
+  }
+} // end of playlist function
+
+var i = 1
+function pauseAudiox() {
+  if (i == 1) {
+    console.log("pausing takeonme.");
+    track1.pause();
+    i++;
+  } else if (i == 2) {
+    console.log("pausing nevergonnagiveyouup.");
+    track2.pause();
+    i++;
+  } else if (i == 3) {
+    console.log("pausing earthwindandfire.");
+    track3.pause();
+    i++;
+  } else if (i == 4){
+  	console.log("pausing carelesswhisper")
+  	track4.pause();
+  	i++
+  } else if (i == 5){
+  	console.log("pausing shootingstars")
+  	track5.pause();
+  	i++
+  } else if (i == 6){
+  	console.log("pausing ymca")
+  	track6.pause();
+  	i++
+  } else if (i == 7){
+  	console.log("pausing stayinalive")
+  	track7.pause();
+  	i++
+  } else if (i == 8){
+  	console.log("pausing finalcountdown")
+  	track8.pause();
+  	i = 0
+  }
+} // end of playlist function
+
+
+
+
+
+
+function pauseMusic(){
+	var audio = new Audio(currentSong)
+	audio.pause
+}
+
+
+</script>
+
+
+<body>
+
+<div class="rainbowhead">Old Music DJ</div>
+
+<div id="musicplay">
+
+	<button class="button" onclick="playAudiox()">
+		Play
+	</button>
+
+	<input type="button" class="button" value="Stop" onclick="window.location.reload()" width="60px">
+
+	<button class="button" onclick="pauseAudiox()">
+		Pause
+	</button>
+
+	
+		
+</div>
+
+
+
+<div id="container">
+
+	<div id="header">
+		<img src="upbutton.png" onclick="" height="50px" width="50px">
+		<img src= "downbutton.png" onclick="" height="50px" width="50px">
+	</div> 
+
+
+<div id="tempSongList">
+	
+</div>
+
+<button onclick="buildSongList()">
+	Click for Song list
+</button>
+
+
+
+</div>
+<!-- close of container  -->
+
+</body>
+</html>
