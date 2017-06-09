@@ -1,7 +1,8 @@
 #tempsonglist {
 
 background-color: pink;
-float: left;
+margin-left: 20%;
+margin-right: 20%;
 
 }
 
@@ -30,8 +31,8 @@ height: 50px;
 
 
 .songbox {
-
-width: 200px;
+width: 90%;
+text-align: center;
 font-size: 30px;
 font-family: italic;
 padding-top: 20px;
